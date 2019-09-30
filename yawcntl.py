@@ -78,3 +78,7 @@ while True:
 				dc = dc-1
 			#need that exception from earlier here.
 GPIO.cleanup()
+
+#also need an exception to address if des_heading is out of servo range (preferably without 
+#moving the servos to the edges to find them-servo will go to one end, calculate other end with that value?
+#will be an approximation so give 10 degree buffer zone? (not the most accurate detection method)
